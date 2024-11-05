@@ -1,8 +1,8 @@
-using ain_shams.Models;
+using Ainshmes.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace ain_shams.Controllers
+namespace Ainshmes.Controllers
 {
     public class HomeController : Controller
     {
@@ -17,12 +17,31 @@ namespace ain_shams.Controllers
         {
             return View();
         }
-
-        public IActionResult Privacy()
+        
+        public IActionResult Contact()
         {
             return View();
         }
-
+        public IActionResult IT_Section()
+        {
+            return View();
+        }
+        public IActionResult TablesFinel()
+        {
+            return View();
+        }
+        public IActionResult TablesStudy()
+        {
+            return View();
+        }
+        public IActionResult Acadimyy()
+        {
+            return View();
+        }
+        public IActionResult About1()
+        {
+            return View();
+        }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

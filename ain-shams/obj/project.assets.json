@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fadwa\\source\\repos\\ain-shams\\ain-shams\\ain-shams.csproj",
+      "projectUniqueName": "D:\\ain-shams\\ain-shams\\ain-shams.csproj",
       "projectName": "ain-shams",
-      "projectPath": "C:\\Users\\fadwa\\source\\repos\\ain-shams\\ain-shams\\ain-shams.csproj",
+      "projectPath": "D:\\ain-shams\\ain-shams\\ain-shams.csproj",
       "packagesPath": "C:\\Users\\fadwa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fadwa\\source\\repos\\ain-shams\\ain-shams\\obj\\",
+      "outputPath": "D:\\ain-shams\\ain-shams\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

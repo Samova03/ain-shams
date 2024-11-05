@@ -1,4 +1,39 @@
-﻿// Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿//سهم الرجوع للاعلي
+// احصل على السهم
+const backToTopButton = document.getElementById('back-to-top');
 
-// Write your JavaScript code.
+// عند التمرير، تحقق من المسافة
+window.onscroll = function () {
+    // إذا نزل المستخدم 100px أو أكثر، يظهر السهم
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        backToTopButton.style.display = "block";
+    } else {
+        backToTopButton.style.display = "none";
+    }
+};
+
+// عند الضغط على السهم، عد إلى أعلى الصفحة
+backToTopButton.addEventListener('click', function (e) {
+    e.preventDefault(); // منع السلوك الافتراضي للرابط
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // للانتقال الناعم
+    });
+});
+//صور المعهد 
+const productContainers = [...document.querySelectorAll('.product-container')];
+const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
+const preBtn = [...document.querySelectorAll('.pre-btn')];
+
+productContainers.forEach((item, i) => {
+    let containerDimensions = item.getBoundingClientRect();
+    let containerWidth = containerDimensions.width;
+
+    nxtBtn[i].addEventListener('click', () => {
+        item.scrollLeft += containerWidth;
+    })
+
+    preBtn[i].addEventListener('click', () => {
+        item.scrollLeft -= containerWidth;
+    })
+})
